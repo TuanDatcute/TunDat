@@ -29,6 +29,8 @@
         /* chữ co lại vừa màn hình */
         height: auto;
     }
+
+
 }
 
 * {
@@ -479,15 +481,13 @@
     text-align: center;
 }
 
-.contact2 p {
+.contact2>p {
     margin: 15px 0;
     text-align: center;
     font-family: Lato, sans-serif;
     font-size: 15px;
     font-style: italic;
     color: #999;
-     align-items: center;
-    justify-content: center;
 }
 
 .i1 {
@@ -524,7 +524,6 @@
 }
 
 .boxx {
-    padding-bottom: 50px;
     position: relative;
     width: auto;
 }
@@ -543,11 +542,18 @@ body.popup-active::before {
     /* Nằm dưới popup */
 }
 
+
+
+.boxx .boxx1 {
+    margin: 5px;
+    width: 100%;
+}
+
 .my-input1 {
     display: inline;
     width: 48%;
     padding: 8px;
-    border: 0.8 solid #999;
+    border: 1px solid #999;
     margin-right: 10px;
 }
 
@@ -555,14 +561,15 @@ body.popup-active::before {
     display: inline;
     width: 48%;
     padding: 8px;
-    border: 0.8 solid #999;
+    border: 1px solid #999;
 }
 
 .my-input3 {
     width: 99%;
     padding: 8px;
-    border: 0.8 solid #999;
-    margin-top: 8px;
+    border: 1px solid #999;
+    margin: 5px;
+    margin-left: 0;
     border-bottom: 8 solid #999;
 }
 
@@ -618,6 +625,7 @@ footer p {
 
 
 }
+
 .submore a {
     background-color: white;
     text-decoration: none;
@@ -632,11 +640,12 @@ footer p {
 
 
 
-.more:hover .submore a{
-     display: block;
+.more:hover .submore a {
+    display: block;
 }
 
-.menul >div:hover> a, .more .submore a:hover {
+.menul>div:hover>a,
+.more .submore a:hover {
     background-color: #ccc;
     color: black;
 }
@@ -726,6 +735,7 @@ footer p {
         width: 100%;
         /* từ ngang -> dọc */
         flex-direction: column;
+        
     }
 
     .contact3 .icon {
@@ -737,14 +747,22 @@ footer p {
     }
 
     .boxx input {
-        width: 100%;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boxx .boxx1 input {
+        margin: 5px;
+        width: 90%;
     }
 
     .boxx .my-input2 {
-        
+
         margin-top: 8px;
     }
-    .boxx .my-input3{
+
+    .boxx .my-input3 {
         margin-top: 6px;
     }
 
